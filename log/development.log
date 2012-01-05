@@ -61611,3 +61611,3570 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:14:47 -0300
 Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:20:43 -0300
+  Processing by AgentsController#index as HTML
+  [1m[36mAgent Load (0.3ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0[0m
+Rendered agents/index.html.erb within layouts/application (59.4ms)
+Completed 200 OK in 156ms (Views: 155.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /agents.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /autos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /bootstrap.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /agents.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /autos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:44 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents/new" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+  Processing by AgentsController#new as HTML
+Rendered agents/_form.html.erb (38.3ms)
+Rendered agents/new.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:47 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.3ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (178.3ms)
+Completed 200 OK in 191ms (Views: 187.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:50 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+  Processing by AutosController#new as HTML
+  [1m[36mAgent Load (0.1ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome[0m
+Rendered autos/_form.html.erb (72.3ms)
+Rendered autos/new.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:20:55 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2012-01-05 15:22:20 -0300
+  Processing by AutosController#new as HTML
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome
+Rendered autos/_form.html.erb (229.6ms)
+Rendered autos/new.html.erb within layouts/application (231.1ms)
+Completed 200 OK in 241ms (Views: 239.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+  Processing by AutosController#new as HTML
+  [1m[36mAgent Load (0.1ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome[0m
+Rendered autos/_form.html.erb (34.1ms)
+Rendered autos/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:22 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:22 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:22 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+  Processing by AutosController#new as HTML
+  [1m[35mAgent Load (0.1ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome
+Rendered autos/_form.html.erb (32.8ms)
+Rendered autos/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:23 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+  Processing by AutosController#new as HTML
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome[0m
+Rendered autos/_form.html.erb (36.7ms)
+Rendered autos/new.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:24 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:22:58 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:23:43 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 69ms (Views: 65.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:44 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:23:56 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:24:04 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (102.3ms)
+Completed 200 OK in 120ms (Views: 116.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:04 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:04 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:04 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:04 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:05 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:05 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:05 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:05 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (96.6ms)
+Completed 200 OK in 109ms (Views: 105.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:07 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (99.2ms)
+Completed 200 OK in 112ms (Views: 108.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:31 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (132.4ms)
+Completed 200 OK in 145ms (Views: 142.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:44 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+  Processing by AutosController#new as HTML
+  [1m[36mAgent Load (0.1ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome[0m
+Rendered autos/_form.html.erb (70.1ms)
+Rendered autos/new.html.erb within layouts/application (71.5ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:24:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:05 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 104ms (Views: 100.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:25:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos?utf8=%E2%9C%93&search=2012-01-04" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+  Processing by AutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"2012-01-04"}
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro LIKE '%2012-01-04%') ORDER BY inicio
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%2012-01-04%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (78.6ms)
+Completed 200 OK in 91ms (Views: 87.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:03 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+  Processing by AutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro LIKE '%%') ORDER BY inicio
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 105ms (Views: 101.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:08 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+  Processing by AutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro LIKE '%%') ORDER BY inicio[0m
+  [1m[35mAuto Load (2.8ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (91.6ms)
+Completed 200 OK in 103ms (Views: 97.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2012-01-05 15:26:37 -0300
+  Processing by AutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro LIKE '%%') ORDER BY inicio
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 69ms (Views: 64.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:26:38 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2012-01-05 15:35:58 -0300
+
+SyntaxError (/home/work/ruby/ControleAIT/app/controllers/application_controller.rb:3: invalid multibyte char (US-ASCII)
+/home/work/ruby/ControleAIT/app/controllers/application_controller.rb:3: syntax error, unexpected $end, expecting keyword_end
+  http_basic_authenticate_wi...
+ ^):
+  app/controllers/autos_controller.rb:1:in `<top (required)>'
+
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.4ms)
+
+
+Started GET "/autos?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2012-01-05 15:36:00 -0300
+
+SyntaxError (/home/work/ruby/ControleAIT/app/controllers/application_controller.rb:3: invalid multibyte char (US-ASCII)
+/home/work/ruby/ControleAIT/app/controllers/application_controller.rb:3: syntax error, unexpected $end, expecting keyword_end
+  http_basic_authenticate_wi...
+ ^):
+  app/controllers/autos_controller.rb:1:in `<top (required)>'
+
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:36:12 -0300
+
+SyntaxError (/home/work/ruby/ControleAIT/app/controllers/application_controller.rb:3: invalid multibyte char (US-ASCII)
+/home/work/ruby/ControleAIT/app/controllers/application_controller.rb:3: syntax error, unexpected $end, expecting keyword_end
+  http_basic_authenticate_wi...
+ ^):
+  app/controllers/autos_controller.rb:1:in `<top (required)>'
+
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/work/.rvm/gems/ruby-1.9.2-p290@rails3.1.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:37:26 -0300
+  Processing by AutosController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (89.7ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:39 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:47 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:48 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+  Processing by AutosController#report as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/report.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 13.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:49 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:50 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 104ms (Views: 100.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:52 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 104ms (Views: 100.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:57 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:37:59 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (93.5ms)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:08 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (93.2ms)
+Completed 200 OK in 105ms (Views: 101.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:10 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (94.7ms)
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:13 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+  Processing by AgentsController#index as HTML
+  [1m[36mAgent Load (0.1ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0[0m
+Rendered agents/index.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:14 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (95.7ms)
+Completed 200 OK in 110ms (Views: 106.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:15 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+  Processing by AutosController#report as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio[0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:16 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (4.5ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 117ms (Views: 109.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /autos.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:39:32 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:40:56 -0300
+  Processing by AutosController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.5ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (97.3ms)
+Completed 200 OK in 113ms (Views: 109.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:13 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (93.2ms)
+Completed 200 OK in 105ms (Views: 101.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:18 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+  Processing by AutosController#report as HTML
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:19 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.1ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:21 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents/new" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+  Processing by AgentsController#new as HTML
+Rendered agents/_form.html.erb (8.2ms)
+Rendered agents/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:23 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+  Processing by AutosController#report as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio[0m
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:29 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+  Processing by AgentsController#index as HTML
+  [1m[36mAgent Load (0.1ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0[0m
+Rendered agents/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:31 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.1ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:33 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+  Processing by AutosController#report as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio[0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:35 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:37 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.1ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 51ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents/new" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+  Processing by AgentsController#new as HTML
+Rendered agents/_form.html.erb (8.0ms)
+Rendered agents/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:40 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+  Processing by AgentsController#index as HTML
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0[0m
+Rendered agents/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:41:54 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (93.9ms)
+Completed 200 OK in 107ms (Views: 103.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:41:55 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:42:19 -0300
+  Processing by AutosController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:42:27 -0300
+  Processing by AutosController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:42:36 -0300
+  Processing by AutosController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:42:52 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (103.4ms)
+Completed 200 OK in 118ms (Views: 114.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:42:52 -0300
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:42:52 -0300
+Served asset /autos.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:42:52 -0300
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:42:52 -0300
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:42:53 -0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:42:53 -0300
+Served asset /agents.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:42:53 -0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:42:53 -0300
+Served asset /agents.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:42:53 -0300
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:42:53 -0300
+Served asset /autos.js - 200 OK (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.1ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (53.6ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:08 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+  Processing by AutosController#report as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/report.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /autos.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:09 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:12 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:43:13 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:14 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+  Processing by AutosController#report as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:43:16 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+  Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+  [1m[36mAgent Load (0.2ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/index.html.erb within layouts/application (94.1ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:01 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+  Processing by AutosController#report as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio[0m
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos" 
+Rendered autos/report.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/autos" for 127.0.0.1 at 2012-01-05 15:44:04 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (96.9ms)
+Completed 200 OK in 112ms (Views: 109.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/agents" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+  Processing by AgentsController#index as HTML
+  [1m[35mAgent Load (0.1ms)[0m  SELECT "agents".* FROM "agents" ORDER BY nome LIMIT 50 OFFSET 0
+Rendered agents/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:44:05 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:52:48 -0300
+  Processing by AutosController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+  Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro like '%%') ORDER BY inicio LIMIT 50 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+  [1m[35mAgent Load (0.2ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "agents".* FROM "agents" WHERE "agents"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/index.html.erb within layouts/application (90.6ms)
+Completed 200 OK in 103ms (Views: 100.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /autos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /agents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:11 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/report" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+  Processing by AutosController#report as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos" WHERE (data_do_cadastro = NULL) ORDER BY inicio
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT "autos".* FROM "autos" [0m
+Rendered autos/report.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /agents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /autos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/autos.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /autos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/agents.js?body=1" for 127.0.0.1 at 2012-01-05 15:53:57 -0300
+Served asset /agents.js - 304 Not Modified (0ms)

@@ -1,5 +1,5 @@
 class AutosController < ApplicationController
-  # GET /autos
+	http_basic_authenticate_with :name => "??????", :password => "??????????"  # GET /autos
   # GET /autos.json
   def index
     @autos = Auto.search(params[:search], params[:page])
@@ -81,7 +81,7 @@ class AutosController < ApplicationController
     end
   end
   def report
-    @autos = Auto.find(:all, :conditions => ['data_do_cadastro = ?', params[:search] ], :order => "agent_id")
+    @autos = Auto.find(:all, :conditions => ['data_do_cadastro = ?', params[:search] ], :order => "inicio")
   end 
   
 end

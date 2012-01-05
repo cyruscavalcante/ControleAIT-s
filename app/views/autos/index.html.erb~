@@ -103,19 +103,19 @@
     <th>Total</th>
 </tr>
 <tr>
-	<td>Autos Lavrados <b class="blue">MANHÃ</b></td>
+	<td class="blue">Autos Lavrados <b>MANHÃ</b></td>
 	<td> <%= @total_validos_manha %></td>
 	<td> <%= @total_invalidos_manha %></td>
 	<td> <%= @total_validos_manha + @total_invalidos_manha  %></td>
 </tr>
 <tr>
-	<td>Autos Lavrados <b class="blue">TARDE</b></td>
+	<td class="blue">Autos Lavrados <b>TARDE</b></td>
 	<td> <%= @total_validos_tarde %></td>
 	<td> <%= @total_invalidos_tarde %></td>
 	<td> <%= @total_validos_tarde + @total_invalidos_tarde  %></td>
 </tr>
 <tr>
-	<td>Autos Lavrados <b class="blue">NOITE</b></td>
+	<td class="blue">Autos Lavrados <b>NOITE</b></td>
 	<td> <%= @total_validos_noite %></td>
 	<td> <%= @total_invalidos_noite %></td>
 	<td> <%= @total_validos_noite + @total_invalidos_noite  %></td>
@@ -130,4 +130,5 @@
 </div>
 
 <br /><br />
-<%= link_to 'Cadastrar Auto', new_auto_path, :class => "label notice" %>
+<%= link_to 'Cadastrar Auto(s)', new_auto_path, :class => "label notice" %>
+<br /><br />

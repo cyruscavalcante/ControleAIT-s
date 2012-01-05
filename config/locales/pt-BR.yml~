@@ -247,6 +247,7 @@
         agent: "Agente"
         inicio: "Início"
         data_da_infracao: "Data da infração"
+        data_do_cadastro: "Data de entrega"
 
 
 # traduzindo aos views index e show

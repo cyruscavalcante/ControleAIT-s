@@ -1,8 +1,9 @@
 class AgentsController < ApplicationController
+	http_basic_authenticate_with :name => "???", :password => "?????????"
   # GET /agents
   # GET /agents.json
   def index
-    @agents = Agent.order("nome").paginate :page => params['page'], :per_page => 10
+    @agents = Agent.order("nome").paginate :page => params['page'], :per_page => 50
 
     respond_to do |format|
       format.html # index.html.erb

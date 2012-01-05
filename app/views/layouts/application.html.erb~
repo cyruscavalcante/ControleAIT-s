@@ -20,8 +20,7 @@ $(function(){
 
 
 </head>
-<body style="background: #EEEEEE;">
-
+<body>
 
 <div class="container">
 
@@ -31,7 +30,7 @@ $(function(){
           <a class="brand" href="#">Controle de AIT's</a>
           <ul class="nav">
             <li><a href="/agents">Agentes</a></li>
-            <li><a href="/autos">Auto</a></li>
+            <li><a href="/autos">Auto(s)</a></li>
             <li><a href="/report">Relatório</a></li>
           </ul>
 

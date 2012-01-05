@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Mostrar', @auto %> |
-<%= link_to 'Voltar', autos_path %>
+<%= link_to 'Mostrar', @auto, :class => "label" %> |
+<%= link_to 'Voltar', autos_path, :class => "label" %>

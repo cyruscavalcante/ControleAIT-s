@@ -242,6 +242,9 @@
       agent:
         one: Agente
         other: Agentes
+      auto:
+        one: Auto(s)
+        other: Agentes
     attributes:
       auto:
         agent: "Agente"

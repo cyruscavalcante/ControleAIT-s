@@ -8,7 +8,7 @@
 <% @data = auto.data_do_cadastro %>
 <% end %>
 
-<center><h4>Controle de AIT realizado no dia 
+<center><h4>Controle de AIT's realizado no dia 
 <% if @autos == Auto.all %>
 <%= @data = nil %>
 <% else %>
@@ -130,4 +130,5 @@
 </div>
 
 <br /><br />
-<%= link_to 'Cadastrar Auto', new_auto_path, :class => "label notice" %>
+<%= link_to 'Cadastrar Auto(s)', new_auto_path, :class => "label notice" %>
+<br /><br />
