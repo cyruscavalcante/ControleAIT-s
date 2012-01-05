@@ -1,0 +1,41 @@
+<%= form_for(@auto) do |f| %>
+  <% if @auto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@auto.errors.count, "erro") %> impedindo esse auto de ser salvo:</h2>
+
+      <ul>
+      <% @auto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :agent %><br />
+   	<%= f.collection_select(:agent_id, Agent.order('nome'), :id, :nome, {:prompt => true})%>
+  </div>
+  <div class="field">
+    <%= f.label :inicio %><br />
+    <%= f.number_field :inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :fim %><br />
+    <%= f.number_field :fim %>
+  </div>
+  <div class="field">
+    <%= f.label :validade %><br />
+    <%= f.select(:validade, [['Válido'],['Inválido']])  %>
+  </div>
+  <div class="field">
+    <%= f.label :data_da_infracao %><br />
+    <%= f.date_select :data_da_infracao %>
+  </div>
+  <div class="field">
+    <%= f.label :data_do_cadastro %><br />
+    <%= f.date_select :data_do_cadastro %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

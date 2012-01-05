@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Agent:</b>
+  <%= @auto.agent.nome %>
+</p>
+
+<p>
+  <b>Inicio:</b>
+  <%= @auto.inicio %>
+</p>
+
+<p>
+  <b>Fim:</b>
+  <%= @auto.fim %>
+</p>
+
+<p>
+  <b>Validade:</b>
+  <%= @auto.validade %>
+</p>
+
+<p>
+  <b>Data da infracao:</b>
+  <%=l  @auto.data_da_infracao, :format => :default %>
+</p>
+
+<p>
+  <b>Data de entrega:</b>
+  <%=l  @auto.data_do_cadastro, :format => :default %>
+</p>
+
+
+<%= link_to 'Editar', edit_auto_path(@auto) %> |
+<%= link_to 'Voltar', autos_path %>

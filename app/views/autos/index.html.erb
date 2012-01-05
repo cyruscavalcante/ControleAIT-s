@@ -1,0 +1,133 @@
+<%= form_tag autos_path, :method => 'get' do %>
+	<p>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search", :name => nil, :class => "btn success" %>
+	</p>
+<% end %>
+<% @autos.each do |auto| %>
+<% @data = auto.data_do_cadastro %>
+<% end %>
+
+<center><h4>Controle de AIT realizado no dia 
+<% if @autos == Auto.all %>
+<%= @data = nil %>
+<% else %>
+<%= @data.strftime("%d/%m/%Y") %>
+<% end %>
+</h4></center>
+<% @total_validos = 0 %>
+<% @total_invalidos = 0 %>
+<% @total_validos_manha = 0 %>
+<% @total_invalidos_manha = 0 %>
+<% @total_validos_tarde = 0 %>
+<% @total_invalidos_tarde = 0 %>
+<% @total_validos_noite = 0 %>
+<% @total_invalidos_noite = 0 %>
+
+<table>
+  <tr>
+    <th>Mat</th>
+    <th>Agente</th>
+    <th>Início</th>
+    <th>Fim</th>
+    <th>Validade</th>
+    <th>Data da infração</th>
+    <th>Total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @autos.each do |auto| %>
+	<% @data = auto.data_do_cadastro %>
+	<% if auto.validade == "Válido" %>
+		<% @total_validos += auto.fim - auto.inicio + 1 %>
+	<% elsif auto.validade == "Inválido" %>
+		<% @total_invalidos += auto.fim - auto.inicio + 1 %>
+	<% end %>
+
+	<% if auto.validade == "Válido" and auto.agent.turno == "Manhã" %>
+		<% @total_validos_manha += auto.fim - auto.inicio + 1 %>
+	<% elsif auto.validade == "Inválido" and auto.agent.turno == "Manhã" %>
+		<% @total_invalidos_manha += auto.fim - auto.inicio + 1 %>
+	<% end %>
+
+	<% if auto.validade == "Válido" and auto.agent.turno == "Tarde" %>
+		<% @total_validos_tarde += auto.fim - auto.inicio + 1 %>
+	<% elsif auto.validade == "Inválido" and auto.agent.turno == "Tarde" %>
+		<% @total_invalidos_tarde += auto.fim - auto.inicio + 1 %>
+	<% end %>
+
+	<% if auto.validade == "Válido" and auto.agent.turno == "Noite" %>
+		<% @total_validos_noite += auto.fim - auto.inicio + 1 %>
+	<% elsif auto.validade == "Inválido" and auto.agent.turno == "Noite" %>
+		<% @total_invalidos_noite += auto.fim - auto.inicio + 1 %>
+	<% end %>
+
+	
+  <tr>
+    <td><%= auto.agent.mat %></td>
+    <td><%= auto.agent.nome %></td>
+    <td><%= auto.inicio %></td>
+    <td><%= auto.fim %></td>
+    <td><%= auto.validade %></td>
+    <td><%=l  auto.data_da_infracao, :format => :default %></td>
+    <td><%= auto.fim - auto.inicio + 1 %></td>
+    <td><%= link_to 'Mostrar', auto %></td>
+    <td><%= link_to 'Editar', edit_auto_path(auto) %></td>
+    <td><%= link_to 'Deletar', auto, confirm: 'Tem certeza?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= will_paginate @autos %>
+
+<style type="text/css">
+  #block3 {
+		display: none; }
+</style>
+ 
+<a href="#" id="for-block3"><b>Relatório Turnos</b></a>
+<div id="block3">
+<table>
+<tr>
+    <th>DATA 
+    	<% if @autos == Auto.all %>
+			<%= @data = nil %>
+			<% else %>
+			<%= @data.strftime("%d/%m/%Y") %>
+			<% end %>
+		</th>
+    <th>Válidos</th>
+    <th>Inválidos</th>
+    <th>Total</th>
+</tr>
+<tr>
+	<td>Autos Lavrados <b>MANHÃ</b></td>
+	<td> <%= @total_validos_manha %></td>
+	<td> <%= @total_invalidos_manha %></td>
+	<td> <%= @total_validos_manha + @total_invalidos_manha  %></td>
+</tr>
+<tr>
+	<td>Autos Lavrados <b>TARDE</b></td>
+	<td> <%= @total_validos_tarde %></td>
+	<td> <%= @total_invalidos_tarde %></td>
+	<td> <%= @total_validos_tarde + @total_invalidos_tarde  %></td>
+</tr>
+<tr>
+	<td>Autos Lavrados <b>NOITE</b></td>
+	<td> <%= @total_validos_noite %></td>
+	<td> <%= @total_invalidos_noite %></td>
+	<td> <%= @total_validos_noite + @total_invalidos_noite  %></td>
+</tr>
+<tr>
+	<td><b>Total Geral</b></td>
+	<td> <%= @total_validos %></td>
+	<td> <%= @total_invalidos %></td>
+	<td> <%= @total_validos + @total_invalidos %></td>
+</tr>
+</table>
+</div>
+
+<br /><br />
+<%= link_to 'Cadastrar Auto', new_auto_path %>

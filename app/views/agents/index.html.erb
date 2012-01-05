@@ -1,0 +1,29 @@
+<h1>Listando agentes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Mat</th>
+    <th>Turno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @agents.each do |agent| %>
+  <tr>
+    <td><%= agent.nome %></td>
+    <td><%= agent.mat %></td>
+    <td><%= agent.turno %></td>
+    <td><%= link_to 'Mostrar', agent %></td>
+    <td><%= link_to 'Editar', edit_agent_path(agent) %></td>
+    <td><%= link_to 'Deletar', agent, confirm: 'Tem certeza?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= will_paginate @agents %>
+
+<br />
+
+<%= link_to 'Cadastrar Agente', new_agent_path %>

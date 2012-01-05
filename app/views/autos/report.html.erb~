@@ -1,0 +1,107 @@
+<%= form_tag '#report', :method => 'get' do %>
+	<p>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search", :name => nil, :class => "btn success" %>
+	</p>
+<% end %>
+<% @autos.each do |auto| %>
+<% @data = auto.data_do_cadastro %>
+<% end %>
+
+<center><h4>Controle de AIT realizado no dia 
+<% if @autos == Auto.all %>
+<%= @data = nil %>
+<% else %>
+<% if @data != nil %>
+<%= @data.strftime("%d/%m/%Y") %>
+<% end %>
+<% end %>
+</h4></center>
+
+<% @cont = 0 %>
+<table>
+  <tr>
+    <th>Ordem</th>
+    <th>Nº AIT</th>
+    <th>DATA</th>
+    <th>Ordem</th>
+    <th>Nº AIT</th>
+    <th>DATA</th>
+    <th>Ordem</th>
+    <th>Nº AIT</th>
+    <th>DATA</th>
+  </tr>
+  <tr>
+<% @autos.each do |auto| %>
+
+  <% if auto.inicio == auto.fim and auto.validade == "Válido" %>
+		<% @cont += 1 %>
+		<% if (@cont - 1 ) % 3 == 0 %>
+			<tr>
+			</tr>
+		<% end %>
+    <td><%= @cont %></td>
+    <td><%= auto.inicio %></td>
+    <td><%=l  auto.data_da_infracao, :format => :default %></td>
+	<% elsif auto.inicio != auto.fim and auto.validade == "Válido" %>
+		<% for i in (auto.inicio..auto.fim) %>
+		<% @cont += 1 %>
+		<% if (@cont - 1 ) % 3 == 0 %>
+			</tr>
+			<tr>
+		<% end %>
+
+    <td><%= @cont %></td>
+    <td><%= i %></td>
+    <td><%=l  auto.data_da_infracao, :format => :default %></td>
+		<% end %>
+	<% end %>	
+
+<% end %>
+	<% if (@cont % 3) != 0 %>
+	<% for i in ((@cont % 3)..6) %> 
+		<td></td>
+	<% end %>
+	<% end %>
+
+  </tr>
+</table>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Inválidos: &nbsp&nbsp
+<% @autos.each do |auto| %>
+  <% if auto.inicio == auto.fim and auto.validade == "Inválido" %>
+		<%= auto.inicio %>&nbsp&nbsp
+	<% elsif auto.inicio != auto.fim and auto.validade == "Inválido" %>
+		<% for i in (auto.inicio..auto.fim) %>
+			<%= i %>&nbsp&nbsp
+		<% end %>
+	<% end %>
+<% end %>
+
+<br /><br />
+
+<table>
+<tr>
+<% @cont = 0 %>
+<% @autos.each do |auto| %>
+	
+	<% @testedata = nil %>
+	<% if auto.data_da_infracao != @testedata %>
+		<td> <%= @testedata = auto.data_da_infracao.strftime("%d/%m/%Y") %> </td>
+			<% unless @cont == 0 %>		
+				<td> <%= @cont %></td>
+			<% end %>
+		<% @cont = 0 %>
+	<% else %>
+		<% @cont += 1 %>
+	<% end %>
+
+  <% if auto.inicio == auto.fim %>
+
+	<% elsif auto.inicio != auto.fim %>
+
+
+	<% end %>	
+<% end %>
+<tr>
+</table>

@@ -1,0 +1,30 @@
+<%= form_for(@agent) do |f| %>
+  <% if @agent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@agent.errors.count, "erro") %> impedindo esse agente de ser salvo:</h2>
+
+      <ul>
+      <% @agent.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :mat %><br />
+    <%= f.text_field :mat %>
+  </div>
+  <div class="field">
+    <%= f.label :turno %><br />
+    <%= f.select(:turno, [['Manhã'],['Tarde'],['Noite']])  %>
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  agent: 
+  inicio: 1
+  fim: 1
+  validade: MyString
+  data_da_infracao: 2012-01-02
+  data_do_cadastro: 2012-01-02
+
+two:
+  agent: 
+  inicio: 1
+  fim: 1
+  validade: MyString
+  data_da_infracao: 2012-01-02
+  data_do_cadastro: 2012-01-02

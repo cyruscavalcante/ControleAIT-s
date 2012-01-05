@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ControleAIT</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+<script>
+<!--
+$(function(){
+    $("#for-block3")
+        .click(function(){
+       $("#block3").toggle();
+    });
+            
+});
+//-->
+</script>
+
+
+</head>
+<body>
+
+<div class="container">
+
+ <div class="topbar" >
+      <div class="topbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Controle de AIT's</a>
+          <ul class="nav">
+            <li><a href="/agents">Agentes</a></li>
+            <li><a href="/autos">Auto</a></li>
+            <li><a href="/report">Relatório</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+<br /><br /><br />
+
+
+<%= yield %>
+
+</div>
+</body>
+</html>
