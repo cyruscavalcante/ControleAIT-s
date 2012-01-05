@@ -23,4 +23,11 @@ class Auto < ActiveRecord::Base
              :order => 'inicio'	
   	
 	end
+	
+  validate :inicio_fim_valid
+
+   def inicio_fim_valid
+     errors.add(:inicio, " não deve ser menor que inicio") if self.inicio < self.fim
+   end
+
 end
