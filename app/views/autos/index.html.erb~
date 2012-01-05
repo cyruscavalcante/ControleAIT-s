@@ -25,7 +25,7 @@
 <% @total_invalidos_noite = 0 %>
 
 <table>
-  <tr>
+  <tr class="blue">
     <th>Mat</th>
     <th>Agente</th>
     <th>Início</th>
@@ -73,9 +73,9 @@
     <td><%= auto.validade %></td>
     <td><%=l  auto.data_da_infracao, :format => :default %></td>
     <td><%= auto.fim - auto.inicio + 1 %></td>
-    <td><%= link_to 'Mostrar', auto %></td>
-    <td><%= link_to 'Editar', edit_auto_path(auto) %></td>
-    <td><%= link_to 'Deletar', auto, confirm: 'Tem certeza?', method: :delete %></td>
+    <td><%= link_to 'Mostrar', auto, :class => "label" %></td>
+    <td><%= link_to 'Editar', edit_auto_path(auto), :class => "label" %></td>
+    <td><%= link_to 'Deletar', auto, confirm: 'Tem certeza?', method: :delete, :class => "label" %></td>
   </tr>
 <% end %>
 </table>
@@ -90,7 +90,7 @@
 <a href="#" id="for-block3"><b>Relatório Turnos</b></a>
 <div id="block3">
 <table>
-<tr>
+<tr class="blue">
     <th>DATA 
     	<% if @autos == Auto.all %>
 			<%= @data = nil %>
@@ -103,25 +103,25 @@
     <th>Total</th>
 </tr>
 <tr>
-	<td>Autos Lavrados <b>MANHÃ</b></td>
+	<td>Autos Lavrados <b class="blue">MANHÃ</b></td>
 	<td> <%= @total_validos_manha %></td>
 	<td> <%= @total_invalidos_manha %></td>
 	<td> <%= @total_validos_manha + @total_invalidos_manha  %></td>
 </tr>
 <tr>
-	<td>Autos Lavrados <b>TARDE</b></td>
+	<td>Autos Lavrados <b class="blue">TARDE</b></td>
 	<td> <%= @total_validos_tarde %></td>
 	<td> <%= @total_invalidos_tarde %></td>
 	<td> <%= @total_validos_tarde + @total_invalidos_tarde  %></td>
 </tr>
 <tr>
-	<td>Autos Lavrados <b>NOITE</b></td>
+	<td>Autos Lavrados <b class="blue">NOITE</b></td>
 	<td> <%= @total_validos_noite %></td>
 	<td> <%= @total_invalidos_noite %></td>
 	<td> <%= @total_validos_noite + @total_invalidos_noite  %></td>
 </tr>
 <tr>
-	<td><b>Total Geral</b></td>
+	<td><b class="blue">Total Geral</b></td>
 	<td> <%= @total_validos %></td>
 	<td> <%= @total_invalidos %></td>
 	<td> <%= @total_validos + @total_invalidos %></td>
@@ -129,7 +129,5 @@
 </table>
 </div>
 
-
 <br /><br />
-
-<%= link_to 'Cadastrar Auto', new_auto_path %>
+<%= link_to 'Cadastrar Auto', new_auto_path, :class => "label notice" %>

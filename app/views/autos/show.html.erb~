@@ -26,7 +26,7 @@
 </p>
 
 <p>
-  <b>Data do cadastro:</b>
+  <b>Data de entrega:</b>
   <%=l  @auto.data_do_cadastro, :format => :default %>
 </p>
 

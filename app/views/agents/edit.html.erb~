@@ -1,6 +1,6 @@
-<h1>Editing agent</h1>
+<h1>Editando gentes</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @agent %> |
-<%= link_to 'Back', agents_path %>
+<%= link_to 'Mostrar', @agent %> |
+<%= link_to 'Voltar', agents_path %>

@@ -1,7 +1,7 @@
 <h1>Listando agentes</h1>
 
 <table>
-  <tr>
+  <tr class="blue">
     <th>Nome</th>
     <th>Mat</th>
     <th>Turno</th>
@@ -15,9 +15,9 @@
     <td><%= agent.nome %></td>
     <td><%= agent.mat %></td>
     <td><%= agent.turno %></td>
-    <td><%= link_to 'Mostrar', agent %></td>
-    <td><%= link_to 'Editar', edit_agent_path(agent) %></td>
-    <td><%= link_to 'Deletar', agent, confirm: 'Tem certeza?', method: :delete %></td>
+    <td><%= link_to 'Mostrar', agent, :class => "label" %></td>
+    <td><%= link_to 'Editar', edit_agent_path(agent), :class => "label" %></td>
+    <td><%= link_to 'Deletar', agent, confirm: 'Tem certeza?', method: :delete, :class => "label" %></td>
   </tr>
 <% end %>
 </table>
@@ -26,4 +26,4 @@
 
 <br />
 
-<%= link_to 'Cadastrar Agente', new_agent_path %>
+<%= link_to 'Cadastrar Agente', new_agent_path, :class => "label notice" %>

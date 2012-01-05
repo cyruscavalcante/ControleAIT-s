@@ -46,3 +46,24 @@ div {
   ul li {
     font-size: 12px;
     list-style: square; } }
+    
+#user_nav {
+  float: right;
+  font-size: 12px;
+}
+
+.comments { 
+	width:300px; 
+	height:75px; }
+	
+p { b {
+	color: #08b5fb}}
+	
+div {
+  &.field { label {
+   color: #08b5fb;
+   font-weight: bold } } }
+   
+font {
+  &.red { 
+   color: red; } }   

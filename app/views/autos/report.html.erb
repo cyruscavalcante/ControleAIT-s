@@ -19,8 +19,9 @@
 </h4></center>
 
 <% @cont = 0 %>
+<% @datateste = nil %>
 <table>
-  <tr>
+  <tr class="blue">
     <th>Ordem</th>
     <th>Nº AIT</th>
     <th>DATA</th>
@@ -58,16 +59,12 @@
 	<% end %>	
 
 <% end %>
-	<% if (@cont % 3) != 0 %>
-	<% for i in ((@cont % 3)..6) %> 
-		<td></td>
-	<% end %>
-	<% end %>
 
   </tr>
 </table>
 
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Inválidos: &nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Inválidos:</b> &nbsp&nbsp
+<font class="red">
 <% @autos.each do |auto| %>
   <% if auto.inicio == auto.fim and auto.validade == "Inválido" %>
 		<%= auto.inicio %>&nbsp&nbsp
@@ -76,21 +73,51 @@
 			<%= i %>&nbsp&nbsp
 		<% end %>
 	<% end %>
+	<% @datateste = auto.data_da_infracao %>
 <% end %>
-
+</font>
 <br /><br />
 
+<style type="text/css">
+  #block3 {
+		display: none; }
+</style>
+ 
+<a href="#" id="for-block3"><b>Relatório Quantidade de Autos por Data da Infração</b></a>
+<div id="block3">
 <table>
 <tr>
 <% @cont = 0 %>
-<% @autos.each do |auto| %>
-	
-  <% if auto.inicio == auto.fim %>
+<% @cont_tr = 0 %>
+<% @autos.reverse.each do |auto| %>
+	<% @cont_tr += 1 %>
 
-	<% elsif auto.inicio != auto.fim %>
+	<% if auto.data_da_infracao == @datateste %>	
 
+	  <% if auto.inicio == auto.fim %>
+			<% @cont += 1 %>
+		<% elsif auto.inicio != auto.fim %>
+			<% @cont += auto.fim - auto.inicio + 1 %>
+		<% end %>	
+
+	<% else %>	
+			<td><%= @datateste.strftime("%d/%m/%Y") %></td><td><%= @cont %></td>
+		<% @datateste = auto.data_da_infracao %>
+		<% @cont = 0 %>
+	  <% if auto.inicio == auto.fim %>
+			<% @cont += 1 %>
+		<% elsif auto.inicio != auto.fim %>
+			<% @cont += auto.fim - auto.inicio + 1 %>
+		<% end %>	
 	<% end %>	
-
+	<% if (@cont_tr-1) % 5 == 0 %>
+		</tr><tr>
+	<% end %>
 <% end %>
+	<% if @datateste != nil %>
+		<td><%= @datateste.strftime("%d/%m/%Y") %></td><td><%= @cont %></td>
+			<% end %>
 <tr>
 </table>
+</div>
+<br /><br />

@@ -1,5 +1,5 @@
-<h1>New agent</h1>
+<h1>Cadastrar Novo agente</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', agents_path %>
+<%= link_to 'Voltar', agents_path %>

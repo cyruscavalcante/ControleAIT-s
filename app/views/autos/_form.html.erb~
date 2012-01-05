@@ -1,7 +1,7 @@
 <%= form_for(@auto) do |f| %>
   <% if @auto.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@auto.errors.count, "erro") %> impedindo esse auto de ser salvo:</h2>
+      <h2><%= pluralize(@auto.errors.count, "erro") %> impedindo esse(s) auto(s) de ser salvo:</h2>
 
       <ul>
       <% @auto.errors.full_messages.each do |msg| %>
